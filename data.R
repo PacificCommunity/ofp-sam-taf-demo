@@ -3,7 +3,7 @@
 ## Before: catch.csv, surveys_all.csv (bootstrap/data)
 ## After:  catch.csv, summary.csv, survey.csv (data)
 
-library(icesTAF)
+library(TAF)
 
 mkdir("data")
 

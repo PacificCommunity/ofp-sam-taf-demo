@@ -3,7 +3,7 @@
 ## Before: catch.csv, survey.csv (data)
 ## After:  dls.txt (model)
 
-library(icesTAF)
+library(TAF)
 library(icesAdvice)
 
 mkdir("model")

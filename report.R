@@ -3,7 +3,7 @@
 ## Before: summary.csv (data)
 ## After:  summary.csv, survey.png (report)
 
-library(icesTAF)
+library(TAF)
 
 mkdir("report")
 
