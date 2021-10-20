@@ -1,18 +1,17 @@
 ## Run analysis, write model results
 
-## Before: catch.csv, survey.csv (data)
-## After:  dls.txt (model)
+## Before: ezekiel.csv (data)
+## After:  results.RData (model)
 
 library(TAF)
-library(icesAdvice)
 
 mkdir("model")
 
-## Get catch and survey data
-catch <- read.taf("data/catch.csv")
-survey <- read.taf("data/survey.csv")
+## Read data
+ezekiel <- read.taf("data/ezekiel.csv")
 
-## Apply DLS method 3.2, comparing 5 years and 2 years
-dls <- DLS3.2(mean(catch$Catch), survey$Index, len=c(5,2))
+## Fit a model
+fm <- lm(dist~speed, data=ezekiel)
 
-write.dls(dls, "model/dls.txt")
+## Save results
+save(fm, file="model/results.RData")
