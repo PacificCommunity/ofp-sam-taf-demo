@@ -1,22 +1,24 @@
 ## Prepare plots and tables for report
 
-## Before: summary.csv (data)
-## After:  summary.csv, survey.png (report)
+## Before: fit.csv (output)
+## After:  fit.csv, fit.png (report)
 
 library(TAF)
 
 mkdir("report")
 
-summary <- read.taf("data/summary.csv")
+## Read output
+coef <- read.taf("output/coef.csv")
+fit <- read.taf("output/fit.csv")
 
 ## Plot
-taf.png("survey")
-plot(summary$Year, summary$Index, type="b", lty=3, lwd=2,
-     ylim=lim(summary$Index), yaxs="i", main="Survey",
-     xlab="Year", ylab="Index", panel.first=grid(lwd=2))
+taf.png("fit")
+plot(dist~speed, fit, xlab="Speed (mph)", ylab="Stopping distance (ft)")
+lines(fit~speed, fit)
 dev.off()
 
-## Table
-summary <- rnd(summary, "Catch")
-summary <- rnd(summary, "Index", 3)
-write.taf(summary, dir="report")
+## Tables with rounded numbers
+coef <- round(coef, 3)
+fit <- round(fit, 3)
+write.taf(coef, dir="report")
+write.taf(fit, dir="report")
