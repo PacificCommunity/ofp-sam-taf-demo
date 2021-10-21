@@ -1,6 +1,13 @@
+*.Rproj
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
 bootstrap/data
 bootstrap/software
 bootstrap/library
+
 data
 model
 output
