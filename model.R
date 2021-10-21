@@ -10,7 +10,7 @@ mkdir("model")
 ## Read data
 ezekiel <- read.taf("data/ezekiel.csv")
 
-## Fit a model
+## Fit model
 fm <- lm(dist~speed, data=ezekiel)
 
 ## Save results

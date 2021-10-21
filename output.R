@@ -10,7 +10,7 @@ mkdir("output")
 ## Read results
 load("model/results.RData")
 
-## Extract coefficients and fitted values
+## Extract quantities of interest
 coef <- data.frame(b0=coef(fm)[1], b1=coef(fm)[2], row.names=NULL)
 fit <- data.frame(fm$model, fit=fm$fit)
 
