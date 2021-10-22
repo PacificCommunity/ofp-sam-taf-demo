@@ -57,7 +57,7 @@ analyses more manageable and reviewable.
     Channel
   - [2015 Haddock](https://github.com/ices-taf/2015_had-iceg) in Icelandic
     waters
-  - [2016 Plaince](https://github.com/ices-taf/2016_ple-eche) in the Eastern
+  - [2016 Plaice](https://github.com/ices-taf/2016_ple-eche) in the Eastern
     Channel
   - [2016 Cod](https://github.com/ices-taf/2016_cod-347d) in the North Sea
   - [2019 Sandeel](https://github.com/ices-taf/2019_san.sa.6) in Area 6
