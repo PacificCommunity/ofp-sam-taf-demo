@@ -49,7 +49,7 @@ analyses more manageable and reviewable.
 ## See also
 
 - [ICES TAF landing page](https://taf.ices.dk)
-- [ICES TAF documentation page](https://github.com/ices-taf/doc)
+- [ICES TAF documentation](https://github.com/ices-taf/doc)
 - Tutorial [video](https://www.youtube.com/watch?v=FweJbr9hfdY) and [annotated
   transcript](https://github.com/ices-taf/doc/tree/master/tutorial-1#readme)
 - [TAF package](https://cran.r-project.org/package=TAF) help pages
