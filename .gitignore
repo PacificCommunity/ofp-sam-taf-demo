@@ -4,9 +4,9 @@
 .RData
 .Ruserdata
 
-bootstrap/data
-bootstrap/software
-bootstrap/library
+boot/data
+boot/software
+boot/library
 
 data
 model

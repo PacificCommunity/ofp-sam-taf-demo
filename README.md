@@ -7,8 +7,8 @@ run:
 
 ```
 library(TAF)
-taf.bootstrap()
-sourceAll()
+taf.boot()
+source.all()
 ```
 
 ## Explore results
@@ -22,15 +22,14 @@ in the TAF scripts.
 
 ## Quick intro to TAF
 
-The initial data are declared in [DATA.bib](bootstrap/DATA.bib), which is
-processed by the `taf.bootstrap()` function. During this bootstrap procedure,
-each metadata entry is processed and the TAF system then makes the data
-available in the `bootstrap/data` folder, where the `data.R` script will read
-it.
+The initial data are declared in [DATA.bib](boot/DATA.bib), which is processed
+by the `taf.boot()` function. During this boot procedure, each metadata entry is
+processed and the TAF system then makes the data available in the `boot/data`
+folder, where the `data.R` script will read it.
 
-After the bootstrap procedure, the `data.R`, `model.R`, `output.R`, and
-`report.R` scripts are run sequentially, each picking up files from previous
-steps. See the general [TAF flow
+After the boot procedure, the `data.R`, `model.R`, `output.R`, and `report.R`
+scripts are run sequentially, each picking up files from previous steps. See the
+general [TAF flow
 diagram](https://github.com/ices-taf/doc/blob/master/simple.pdf).
 
 The purpose of each script is indicated in the header comments:
